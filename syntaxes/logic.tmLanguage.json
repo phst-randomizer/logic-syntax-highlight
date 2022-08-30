@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Randomizer Logic",
+	"scopeName": "source.logic",
+	"fileTypes": ["logic"],
+	"foldingStartMarker": ":$",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#operators" },
+		{ "include": "#keywords" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"begin": "#",
+				"end": "\\n",
+				"name": "comment.line"
+			}]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"match": "(<?->|&|\\||:)",
+					"name": "keyword.operator.new"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"match": "\\b(area|room|node|door|exit|entrance|chest|flag|item|enemy|defeated|lock|open|setting|gain|lose|state)\\b",
+					"name": "keyword.control"
+				}
+			]
+		}
+	}
+}

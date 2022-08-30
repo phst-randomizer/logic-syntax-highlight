@@ -1,0 +1,25 @@
+{
+  "name": "logic",
+  "displayName": "RandoLogic",
+  "description": "Syntax Highlighting for Randomizer Logic",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "logic",
+      "aliases": ["Randomizer Logic", "logic"],
+      "extensions": ["logic"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "logic",
+      "scopeName": "source.logic",
+      "path": "./syntaxes/logic.tmLanguage.json"
+    }]
+  }
+}
