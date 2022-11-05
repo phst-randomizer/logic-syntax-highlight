@@ -5,16 +5,42 @@
     },
     // symbols used as brackets
     "brackets": [
-        ["(", ")"]
+        ["(", ")"],
+        ["[", "]"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
         ["(", ")"],
-        ["\"", "\""]
+        ["\"", "\""],
+        ["[", "]"]
     ],
     // symbols that can be used to surround a selection
     "surroundingPairs": [
         ["(", ")"],
-        ["\"", "\""]
+        ["\"", "\""],
+        ["[", "]"]
+    ],
+    // any pair will auto close, even if placed before those symbols
+    "autoCloseBefore": ":])\n\t",
+    // all lines that match will have the newline created appended with a text when enter is pressed
+    "onEnterRules": [
+        {
+            "beforeText": "^\\s*area .*:.*$",
+            "action": {
+                "indent": "indent",
+                "appendText": "room "
+            }
+        },
+        {
+            "beforeText": "^\\s*room .*:.*$",
+            "action": {
+                "indent": "indent",
+                "appendText": "node "
+            }
+        },
+        {
+            "beforeText": "^\\s*node .*:.*$",
+            "action": { "indent": "indent" }
+        }
     ]
 }

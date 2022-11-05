@@ -10,16 +10,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "logic",
-      "aliases": ["Randomizer Logic", "logic"],
-      "extensions": ["logic"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "logic",
-      "scopeName": "source.logic",
-      "path": "./syntaxes/logic.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "logic",
+        "aliases": [
+          "Randomizer Logic",
+          "logic"
+        ],
+        "extensions": [
+          "logic"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "logic",
+        "scopeName": "source.logic",
+        "path": "./syntaxes/logic.tmLanguage.json"
+      }
+    ]
   }
 }
