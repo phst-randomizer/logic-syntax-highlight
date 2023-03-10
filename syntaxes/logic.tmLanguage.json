@@ -28,7 +28,7 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "\\b(area|mail|hint|room|node|door|exit|entrance|chest|flag|item|enemy|defeated|lock|open|setting|gain|lose|state|shop)\\b",
+					"match": "\\b(area|mail|hint|room|node|door|exit|entrance|chest|flag|item|enemy|defeated|lock|open|setting|gain|lose|state|shop|macro)\\b",
 					"name": "keyword.control"
 				}
 			]
